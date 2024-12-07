@@ -17,6 +17,10 @@
 <body>
   <div class="container">
     <div class="calculator">
+      <div class="calculatorHead">
+        <h2>Mortgage Calculator</h2>
+        <p id="clearForm">Clear All</p>
+      </div>
       <form>
         <label>
           Mortgage Amount
@@ -29,7 +33,7 @@
           <label>
             Mortgage Term
             <div>
-              <input type="text" id="mortgageTerm">
+              <input type="number" id="mortgageTerm">
               <div class="inputBox">years</div>
             </div>
           </label>
@@ -54,7 +58,7 @@
             </label>
           
         </div>
-        <button>
+        <button type="submit" id="formButton">
           <img src="assets/images/icon-calculator.svg" alt="" srcset="">
           <p>Calculate Repayments</p>
         </button>

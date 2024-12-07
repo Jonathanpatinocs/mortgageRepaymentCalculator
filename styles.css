@@ -5,23 +5,42 @@ body {
     align-items: center;
     height: 100vh;
     justify-content: center;
+    background-color: hsl(202, 86%, 94%);
 }
 .container {
     display: flex;
     width: 70%;
     height: 70%;
     min-width: 900px;
-    min-height: 400px;
+    min-height: 500px;
+    background-color: white;
+    border-radius: 30px;
 }
 
 .container > div {
-    border: solid black 1px;
+    
+    
 }
 .calculator {
     flex: 1;
     padding: 5%;
 }
+.calculatorHead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.calculatorHead > * {
+    margin-top: 0;
+}
+#clearForm {
+    text-decoration: underline;
+    opacity: 60%;
+}
 .results {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 90px;
     padding: 5%;
     display: flex;
     flex-direction: column;
@@ -55,6 +74,15 @@ label > div {
 .inputBox{
     padding: 10px;
     border: solid black 1px;
+    
+}
+form > label {
+    margin-bottom: 20px;
+    
+}
+#mortgageAmount {
+    width: 100%;
+    
 }
 .formTermRatesContainer {
     display: flex;
@@ -71,7 +99,16 @@ label > div {
     flex-direction: column;
     gap: 10px;
 }
+.formChecks h3{
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+label {
+    font-size: 1rem;
+}
 button {
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
