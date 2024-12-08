@@ -70,11 +70,19 @@ label {
 
 label > div {
     display: flex;
+    border: solid hsl(200, 24%, 40%) 1px;
+    border-radius: 5px;
+}
+label > div > input {
+    border-style: none;
+    border-radius: 5px;
 }
 .inputBox{
     padding: 10px;
-    border: solid black 1px;
-    
+    background-color: hsl(202, 86%, 94%);
+    color: hsl(200, 24%, 40%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 form > label {
     margin-bottom: 20px;
@@ -84,15 +92,23 @@ form > label {
     width: 100%;
     
 }
+#mortgageAmountInputBox > div {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
 .formTermRatesContainer {
     display: flex;
     gap: 20px;
 }
 .formChecks label{
-    border: solid black 1px;
+    border: solid hsl(200, 24%, 40%) 1px;
+    border-radius: 5px;
     padding: 10px;
     display: flex;
     flex-direction: row;
+
 }
 .formChecks {
     display: flex;
@@ -114,4 +130,24 @@ button {
     justify-content: center;
     gap: 5px;
     width: 70%;
+    background-color: hsl(61, 70%, 52%);
+    border-radius: 30px;
+    border-style: none;
+}
+
+@media only screen and (max-width: 950px) {
+    body {
+        height: auto;
+    }
+    .container {
+        margin-top: 50px;
+        flex-direction: column;
+        min-width: 500px;
+        min-height: none; 
+    }
+
+    .results {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 30px;
+    }
 }

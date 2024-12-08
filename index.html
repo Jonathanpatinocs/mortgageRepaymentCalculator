@@ -26,21 +26,21 @@
           Mortgage Amount
           <div id="mortgageAmountInputBox">
             <div class="inputBox">$</div>
-            <input type="text" id="mortgageAmount">
+            <input type="number" id="mortgageAmount" min=0>
           </div>
         </label>
         <div class="formTermRatesContainer">
           <label>
             Mortgage Term
             <div>
-              <input type="number" id="mortgageTerm">
+              <input type="number" id="mortgageTerm" min=0>
               <div class="inputBox">years</div>
             </div>
           </label>
           <label>
             Interest Rate
             <div>
-              <input type="number" id="intrestRate">
+              <input type="number" id="intrestRate" min=0>
               <div class="inputBox">%</div>
             </div>
           </label>
