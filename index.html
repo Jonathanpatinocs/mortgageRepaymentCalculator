@@ -26,36 +26,37 @@
           Mortgage Amount
           <div id="mortgageAmountInputBox">
             <div class="inputBox">$</div>
-            <input type="number" id="mortgageAmount" min=0>
+            <input type="text" id="mortgageAmount" min=0>
           </div>
         </label>
         <div class="formTermRatesContainer">
           <label>
             Mortgage Term
             <div>
-              <input type="number" id="mortgageTerm" min=0>
+              <input type="text" id="mortgageTerm" min=0>
               <div class="inputBox">years</div>
             </div>
           </label>
           <label>
             Interest Rate
             <div>
-              <input type="number" id="intrestRate" min=0>
+              <input type="text" id="intrestRate" min=0>
               <div class="inputBox">%</div>
             </div>
           </label>
         </div>
         
         <div class="formChecks">
+          
           <h3>Mortgage Type</h3>
-            <label>
-              <input type="checkbox" name="repaymentCheckbox" id="repaymentCheckbox">
-              Repayment
-            </label>
-            <label>
-              <input type="checkbox" name="intrestCheckbox" id="interestCheckbox">
-              Interest Only
-            </label>
+            <div>
+              <input type="radio" name="check" id="repaymentCheckbox" value="repayment">
+              <label for="repaymentCheckbox">Repayment</label>
+            </div>
+            <div>
+              <input type="radio" name="check" id="interestCheckbox" value="interest">
+              <label for="interestCheckbox">Interest Only</label>
+            </div>
           
         </div>
         <button type="submit" id="formButton">
